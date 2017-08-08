@@ -27,6 +27,7 @@ const handleSubmit = e => {
   	items.list.push([items.counter, items.text]);
   	e.target.myList.value='';
 	render(<ToDoApp />, document.getElementById('root'));
+	items.text='';
 }
 
 const handleChange = e => {
